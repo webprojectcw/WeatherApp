@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url('/bgFog.JPG');
+    background-size: cover;
+    background-position: bottom center;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 20px 5px 10px rgba(0,0,0,0.6);
+}
+
+header {
+    padding: 50px;
+}
+
+header input {
+    width: 100%;
+    max-width: 270px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255, 0.6);
+    border-radius: 16px;
+    border-bottom: 3px solid #313131;
+    color: #313131;
+    font-size: 18px;
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+header input:focus {
+    background-color: rgba(255,255,255, 0.7);
+}
+
+main {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+
+.location .city {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: right;
+    color: #313131;
+}
+
+.location .date {
+    font-size: 20px;
+    color: #313131;
+}
+
+.current .temp {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 30px 0;
+    border: 2px #313131 solid;
+    background-color: rgba(255,255,255 ,0.3);
+    padding: 20px 30px;
+    color: #313131;
+    width: 100%;
+}
+
+.current .temp span {
+    font-weight: 500;
+}
+
+.current .weather {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+.current .hi-low {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    .app-container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .location .city {
+        text-align: center;
+    }
+}
+
+/* Default nav */
+
+.default-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 9999;
+    background-color: tomato;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    text-align: center;
+    animation: slideNav 1s ease-in;
+}
+
+.default-nav ul {
+    list-style: none;
+}
+
+.default-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.default-nav a:hover {
+    color: teal;
+}
+
+.default-nav i {
+    padding: 19px 10px;
+    font-size: 18px;
+}
+
+@keyframes slideNav {
+    0% {
+      transform: translateX(-200%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }

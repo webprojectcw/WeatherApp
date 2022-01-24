@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wetter App</title>
+        <!-- author: chow, 2021 -->
+        <!-- source: https://www.youtube.com/watch?v=n4dtwWgRueI -->
+        <script src="https://kit.fontawesome.com/6a2012cfc7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="wetterZwei.css" />
+    </head>
+    <body>
+        <div class="app-container">
+            <header>
+                <input type="text" autocomplete="off" class="search-box" placeholder="Stadt eingeben..." />
+            </header>
+            <main>
+                <section class="location">
+                    <div class="city"></div>
+                    <div class="date"></div>
+                </section>
+                <div class="current">
+                    <div class="temp">..<span>°C</span></div>
+                    <div class="weather"></div>
+                    <div class="hi-low">°C (min) / °C (max)</div>
+                </div>
+            </main>
+        </div>
+
+        <!-- default nav-->
+        <div class="default-nav">
+            <ul>
+                <li title="Zur Startseite"><a href="/index.html" target="/blank" titel="Zur Startseite"><i class="fas fa-home"></i></a></li>
+                <li title="Zum Impressum"><a href="/impressum.html"><i class="fas fa-info"></i></a></li>
+            </ul>
+        </div>
+        <script src="wetterZwei.js"></script>
+    </body>
+</html>
